@@ -1,0 +1,78 @@
+// Colors
+$introColor: hsl(217, 28%, 15%);
+$mainColor: hsl(218, 28%, 13%);
+$footerColor: hsl(216, 53%, 9%);
+$testimonialsColor: hsl(219, 30%, 18%);
+$cyanColor: hsl(176, 68%, 64%);
+$blueColor: hsl(198, 60%, 50%);
+$whiteColor: hsl(0, 0%, 100%);
+
+// Fonts
+$titleFont: 'Raleway', sans-serif;
+$bodyFont: 'Open Sans', sans-serif;
+
+// Display sizes
+@mixin mobile {
+  @media (min-width: 0px) and (max-width: 440px) {@content;}
+}
+
+@mixin desktop() {
+  @media (min-width: 441px) and (max-width: 2000px) {@content;}
+}
+
+// Mixins
+@mixin topHeader {
+  background-color: $introColor;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: auto;
+  height: 70px;
+}
+
+@mixin imgTopHeader {
+  max-width: 18%;
+  width: auto;
+  margin-left: 2%;
+}
+
+@mixin navBar {
+  margin-left: 20%;
+}
+
+@mixin listNavbar {
+  display: inline;
+  font-family: $titleFont;
+  font-weight: lighter;
+  font-size: 10px;
+  margin-left: 4.5%;
+}
+
+@mixin listTopHeader {
+  list-style: none;
+  margin-top: -8%;
+}
+
+@mixin topSection {
+  background-color: $introColor;
+  overflow-x: hidden;
+}
+
+@mixin imgTopSection {
+  max-width: 60%;
+  width: auto;
+  text-align: center;
+}
+
+// Includes
+@include mobile{
+  body{ max-width: 100%; width: auto; overflow-x: hidden;}
+  .top-header{ @include topHeader; }
+  .img-top-header{ @include imgTopHeader; }
+  .fylo-navbar{ @include navBar; }
+  .list-top-header{ @include listTopHeader; }
+  .list-top-header li{ @include listNavbar; }
+  .list-top-header a{ text-decoration: none; color: $whiteColor; }
+  .margin-top-header{ margin-top: 4%; overflow-x: hidden;}
+  .top-section{ @include topSection; }
+  .img-top-section{ @include imgTopSection; }
+}
