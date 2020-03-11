@@ -14,35 +14,38 @@
   }
 
   .img-top-header {
-    max-width: 18%;
+    max-width: 25%;
     width: auto;
-    margin-left: 2%;
+    margin-left: 3%;
   }
 
   .fylo-navbar {
-    margin-left: 20%;
+    margin-left: 28%;
   }
 
   .list-top-header {
     list-style: none;
-    margin-top: -8%;
+    margin-top: -11%;
   }
 
   .list-top-header li {
     display: inline;
     font-family: "Raleway", sans-serif;
     font-weight: lighter;
-    font-size: 10px;
-    margin-left: 4.5%;
+    font-size: 13px;
+    margin-left: 10%;
   }
 
   .list-top-header a {
     text-decoration: none;
     color: white;
   }
+  .list-top-header a:hover {
+    color: #65e2d9;
+  }
 
   .margin-top-header {
-    margin-top: 4%;
+    margin-top: 5%;
     overflow-x: hidden;
   }
 
@@ -52,7 +55,7 @@
   }
 
   .img-top-section {
-    max-width: 60%;
+    max-width: 85%;
     width: auto;
     text-align: center;
   }
