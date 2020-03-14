@@ -10,11 +10,11 @@
     overflow-x: hidden;
     max-width: 100%;
     width: auto;
-    height: 70px;
+    height: 80px;
   }
 
   .img-top-header {
-    max-width: 25%;
+    max-width: 28%;
     width: auto;
     margin-left: 3%;
   }
@@ -32,7 +32,7 @@
     display: inline;
     font-family: "Raleway", sans-serif;
     font-weight: lighter;
-    font-size: 13px;
+    font-size: 11.5px;
     margin-left: 10%;
   }
 
@@ -58,6 +58,43 @@
     max-width: 85%;
     width: auto;
     text-align: center;
+  }
+
+  .bg-top-section {
+    background-image: url(../images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+  }
+
+  .title-top-section {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  .title2-top-section {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+
+  .button-area {
+    text-align: center;
+  }
+
+  .button-fylo {
+    background-color: #339ecc;
+    width: 65%;
+    height: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border-color: transparent;
+  }
+  .button-fylo:hover {
+    background-color: #65e2d9;
   }
 }
 
