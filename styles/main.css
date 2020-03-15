@@ -95,8 +95,8 @@
 
   .button-fylo {
     background-color: #339ecc;
-    width: 65%;
-    height: 40px;
+    width: 70%;
+    height: 45px;
     border-radius: 40px;
     cursor: pointer;
     color: white;
@@ -111,6 +111,7 @@
 
   .main-section {
     background-color: #181f2a;
+    height: 1220px;
   }
 
   .cardbox-main {
@@ -125,6 +126,29 @@
     color: white;
     padding: 0 30px 90px 30px;
     font-size: 14px;
+  }
+
+  .img-middle-section {
+    max-width: 80%;
+    width: auto;
+  }
+
+  .middle-section {
+    background-color: #181f2a;
+    position: relative;
+    top: -15px;
+    text-align: center;
+  }
+
+  .middle-section h3 {
+    color: white;
+  }
+
+  .middle-section p {
+    color: white;
+    font-size: 14px;
+    padding: 0 30px 0 20px;
+    text-align: justify;
   }
 }
 
