@@ -58,17 +58,23 @@
     max-width: 85%;
     width: auto;
     text-align: center;
+    position: relative;
+    z-index: 10;
   }
 
   .bg-top-section {
-    background-image: url(../images/bg-curvy-mobile.svg);
-    background-repeat: no-repeat;
+    position: relative;
+    top: -50px;
+    z-index: 0;
   }
 
   .title-top-section {
     font-family: "Raleway", sans-serif;
     color: white;
     text-align: center;
+    position: relative;
+    top: -100px;
+    background-color: #181f2a;
   }
 
   .title2-top-section {
@@ -77,6 +83,10 @@
     text-align: center;
     font-weight: lighter;
     font-size: 14px;
+    position: relative;
+    top: -100px;
+    padding: 30px;
+    line-height: 1.5;
   }
 
   .button-area {
@@ -92,9 +102,29 @@
     color: white;
     outline: none;
     border-color: transparent;
+    position: relative;
+    top: -100px;
   }
   .button-fylo:hover {
     background-color: #65e2d9;
+  }
+
+  .main-section {
+    background-color: #181f2a;
+  }
+
+  .cardbox-main {
+    text-align: center;
+  }
+
+  .cardbox-main h3 {
+    color: white;
+  }
+
+  .cardbox-main p {
+    color: white;
+    padding: 0 30px 90px 30px;
+    font-size: 14px;
   }
 }
 

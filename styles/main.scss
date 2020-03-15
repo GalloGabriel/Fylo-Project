@@ -69,6 +69,8 @@ $bodyFont: 'Open Sans', sans-serif;
   max-width: 85%;
   width: auto;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 @mixin titleTopSection {
@@ -91,6 +93,14 @@ $bodyFont: 'Open Sans', sans-serif;
   }
 }
 
+@mixin mainSection {
+  background-color: $mainColor;
+}
+
+@mixin cardBoxMain {
+  text-align: center;
+}
+
 // Includes
 @include mobile{
   body{ max-width: 100%; width: auto; overflow-x: hidden;}
@@ -102,11 +112,14 @@ $bodyFont: 'Open Sans', sans-serif;
   .list-top-header a{ @include linkNavbar; }
   .margin-top-header{ margin-top: 5%; overflow-x: hidden;}
   .top-section{ @include topSection; }
-  .img-top-section{ @include imgTopSection; }
-  .bg-top-section{ background-image: url(../images/bg-curvy-mobile.svg);
-  background-repeat: no-repeat; }
-  .title-top-section { @include titleTopSection; }
-  .title2-top-section { @include titleTopSection; font-weight: lighter; font-size: 14px;}
+  .img-top-section{ @include imgTopSection;}
+  .bg-top-section{ position: relative; top: -50px; z-index: 0;}
+  .title-top-section { @include titleTopSection; position: relative; top: -100px; background-color: $mainColor;}
+  .title2-top-section { @include titleTopSection; font-weight: lighter; font-size: 14px; position: relative; top: -100px; padding: 30px; line-height: 1.5;}
   .button-area { text-align: center;}
-  .button-fylo { @include buttonFylo; }
+  .button-fylo { @include buttonFylo; position: relative; top: -100px;}
+  .main-section { @include mainSection; }
+  .cardbox-main { @include cardBoxMain; }
+  .cardbox-main h3{ color: $whiteColor;}
+  .cardbox-main p{ color: $whiteColor; padding: 0 30px 90px 30px; font-size: 14px;}
 }
