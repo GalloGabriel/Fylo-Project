@@ -113,6 +113,7 @@ $bodyFont: 'Open Sans', sans-serif;
   top: -15px;
   text-align: center;
   height: 530px;
+  overflow: hidden;
 }
 
 @mixin testimonialsSection {
@@ -120,6 +121,7 @@ $bodyFont: 'Open Sans', sans-serif;
   position: relative;
   top: -15px;
   height: 700px;
+  overflow: hidden;
 }
 
 @mixin cardBoxTestimonial {
