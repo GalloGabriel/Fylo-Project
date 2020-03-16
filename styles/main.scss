@@ -112,6 +112,21 @@ $bodyFont: 'Open Sans', sans-serif;
   position: relative;
   top: -15px;
   text-align: center;
+  height: 530px;
+}
+
+@mixin testimonialsSection {
+  background-color: $mainColor;
+  position: relative;
+  top: -15px;
+  height: 700px;
+}
+
+@mixin cardBoxTestimonial {
+  background-color: $testimonialsColor;
+  width: 90%;
+  height: 190px;
+  margin-left: 4%;
 }
 
 // Includes
@@ -139,4 +154,11 @@ $bodyFont: 'Open Sans', sans-serif;
   .middle-section { @include middleSection; }
   .middle-section h3{ color: $whiteColor;}
   .middle-section p{ color: $whiteColor; font-size: 14px; padding: 0 30px 0 20px; text-align: justify;}
+  .testimonials-section{ @include testimonialsSection; }
+  .cardbox-testimonial { @include cardBoxTestimonial; }
+  .cardbox-testimonial p{ padding: 30px 15px 0 15px; color: $whiteColor; font-size: 13px; line-height: 1.5;}
+  .profile-img { border-radius: 50%; padding: 15px; width: 15%;}
+  .profile-name { position: relative; left: 27%; top: -75px; color: $whiteColor;}
+  .profile-span { position: relative; left: 27%; top: -95px; font-size: 10px; color: $whiteColor;}
+  .quotes { margin-left: 7%; width: 10%; position: relative; top: 17px;}
 }

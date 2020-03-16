@@ -138,6 +138,7 @@
     position: relative;
     top: -15px;
     text-align: center;
+    height: 530px;
   }
 
   .middle-section h3 {
@@ -149,6 +150,55 @@
     font-size: 14px;
     padding: 0 30px 0 20px;
     text-align: justify;
+  }
+
+  .testimonials-section {
+    background-color: #181f2a;
+    position: relative;
+    top: -15px;
+    height: 700px;
+  }
+
+  .cardbox-testimonial {
+    background-color: #202a3c;
+    width: 90%;
+    height: 190px;
+    margin-left: 4%;
+  }
+
+  .cardbox-testimonial p {
+    padding: 30px 15px 0 15px;
+    color: white;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .profile-img {
+    border-radius: 50%;
+    padding: 15px;
+    width: 15%;
+  }
+
+  .profile-name {
+    position: relative;
+    left: 27%;
+    top: -75px;
+    color: white;
+  }
+
+  .profile-span {
+    position: relative;
+    left: 27%;
+    top: -95px;
+    font-size: 10px;
+    color: white;
+  }
+
+  .quotes {
+    margin-left: 7%;
+    width: 10%;
+    position: relative;
+    top: 17px;
   }
 }
 
